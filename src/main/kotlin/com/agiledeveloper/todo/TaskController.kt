@@ -15,7 +15,7 @@ class TaskController {
 class TaskController(val service: TaskService) {
 
   @GetMapping("/hello")
-  fun hello() = "hello hyd world"
+  fun hello() = "hello hyd"
 
   @GetMapping
   fun tasks() = ResponseEntity.ok(service.getAll())
